@@ -19,6 +19,10 @@
 .contact-blurb {
     margin: auto;
 }
+.contact-blurb-cell {
+    padding-right: 1px;
+    padding-left: 1px;
+}
 .job-summary {
     text-align: justify;
 }
