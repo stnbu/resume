@@ -1,6 +1,7 @@
 #resume {
     font-family: "Times New Roman", Times, serif;
     width: 75%;
+    background-color: white;
 }
 
 #resume a, a:visited, a:hover, a:active {
