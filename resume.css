@@ -2,6 +2,11 @@
     font-family: "Times New Roman", Times, serif;
     width: 75%;
 }
+
+#resume a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 .job-title {
     font-style: italic;
 }
