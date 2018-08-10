@@ -1,27 +1,46 @@
 <html>
-<head>
-  <style>
-
-    #resume {
-	font-family: "Times New Roman", Times, serif;
-    }
-    .job-title {
-	font-style: italic;
-    }
-    .date-range {
-	font-weight: bold;
-    }
-    .employer {
-	 text-decoration: underline;
-    }
-
-</style>
+  <head>
+    <link rel="stylesheet" type="text/css" href="resume.css">
 </head>
 
-<div id="resume">
+  <table id="resume">
+ <thead>
+  <tr>
+    <th id="page-header">
+      <h3>Mike Burr</h3>
 
-  <div class="page-header">Mike Burr
-mburr@unintuitive.org / 669-800-7593 / https://github.com/stnbu / https://unintuitive.org/</div>
+      <table class="contact-blurb">
+	<tr>
+	  <td>
+	    <a href="mailto:mburr@unintuitive.org">mburr@unintuitive.org</a>
+	  </td>
+	  <td>
+	    <a href="tel:+16698007593">669-800-7593</a>
+	  </td>
+	  <td>
+	    <a href="https://github.com/stnbu">https://github.com/stnbu</a>
+	  </td>
+	  <td>
+	    <a href="https://unintuitive.org/">https://unintuitive.org/</a>
+	  </td>
+      </tr>
+      </table>
+
+    </th>
+  </tr>
+ </thead>
+ <tfoot>
+  <tr>
+     <td class="page-footer">Mike Burr - Resume</td>
+  </tr>
+ </tfoot>
+ <tbody>
+  <tr id="page1">
+    <td>
+
+
+
+<div id="introduction">
 
   <h2>Introduction</h2>
 
@@ -31,10 +50,12 @@ mburr@unintuitive.org / 669-800-7593 / https://github.com/stnbu / https://unintu
 
   <p>This is the workplace I desire.  The details of my technical experiences are available below, on my resume.  A fair cross-section of my work can be found on my <a href="https://github.com/stnbu">GitHub</a> account.  I look forward to having further conversations in order to find a match and get to work on accomplishing great things!</p>
 
-<p>Thanks and best wishes.</p>
+  <p>Thanks and best wishes.</p>
 
-<p>-Mike
-<a href="mailto:mburr@unintuitive.org">mburr@unintuitive.org</a>
+  </div>
+
+<p>-Mike<br />
+<a href="mailto:mburr@unintuitive.org">mburr@unintuitive.org</a><br />
 <a href="tel+:16698007593">669 800 7593</a></p>
 
 <h2>Employment History</h2>
@@ -75,7 +96,22 @@ mburr@unintuitive.org / 669-800-7593 / https://github.com/stnbu / https://unintu
 </p>
 
 <h2>Education</h2>
-<p>Bachelor of Science in Mathematics: Gainesville, FL
+<p class="education">Bachelor of Science in Mathematics: Gainesville, FL
   University of Florida, Graduated: May 1996</p>
-</div>
+
+</td>
+  </tr>
+  <!--
+  <tr>
+     <td>page2</td>
+  </tr>
+  -->
+ </tbody>
+</table>
+
+
+
+
+
+
 </html>
