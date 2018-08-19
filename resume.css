@@ -3,6 +3,8 @@
     width: 75%;
     background-color: ghostwhite;
     padding: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 #resume a, a:visited, a:hover, a:active {
