@@ -81,7 +81,8 @@
 
 	 .collapsible {
 	     cursor: pointer;
-	     padding: 10px;
+	     padding: 3px;
+	     left-padding: 300px;
 	     width: 100%;
 	     border: none;
 	     text-align: left;
@@ -143,14 +144,14 @@
 
 	    <tbody>
 		<tr id="page1" class="page">
-		    <td id="indroduction">
+		    <td id="introduction">
 			<h3>At a Glance...</h3>
 
 			<p class="paragraph">Goal&mdash;I wish to work with a small, motivated team of capable, humble engineers. Workplace culture is a primary
 			    motivator for me. It’s important to me that productivity and goal-seeking be foremost. I thrive under circumstances where I
 			    have ownership. Given a clearly-defined objective, I will produce great results.</p>
 
-			<p class="paragraph">Skills&mdash;<em>Language:</em> Python, Web Frontend (JS, HTML, CSS), Ruby, Shell, PERL
+			<p class="paragraph">Skills&mdash;<em>Language:</em> Python, Web Front-end (JS, HTML, CSS), Ruby, Shell, PERL
 			    <em>Web Backend:</em> Flask, Django, PostgreSQL, NoSQL, Server Stack (Squid, Nginix, WSGI)
 			    <em>Meta:</em> Linux/Unix Systems Matters, Development Process, Automation
 			</p>
@@ -174,8 +175,12 @@
 
 			    <div class="job-body">
 				<ul>
-				    <li>Maintenance, feature implementation, troublehsooting for hybrid cloud platform pure-python testing framework ("gOAT")</li>
-				    <li>Conception, design, implementation of various QA tools: log analysis, mass-host-imaging (with web-UI), gitlab webhooks, git hooks</li>
+				    <li>Maintenance, feature implementation, troubleshooting of pure-python testing framework for VMware's hybrid cloud platform VCF; involved interaction with a wide range of datacenter, cloud technologies: AWS, VM deployment, networking, multiple storage network implementations</li>
+
+				    <li>Conception, design, implementation of various QA tools: log analysis, mass-host-imaging (with web-UI), gitlab web hooks, git hooks; included from-scratch development of widely-used web portals (flask, django) for purpose-built tools</li>
+
+				    <li>Upkeep and tuning of existing devops infrastructure: Jenkins, Gitlab, multiple complex test environments</li>
+
 				</ul>
 				<button class="collapsible">more...</button>
 				<div class="job-more">
@@ -221,7 +226,9 @@
 
 			    <div class="job-body">
 				<ul>
-				    <li>xx</li>
+				    <li>Co-architect role development from-scratch Python framework for Cisco Unified Computing System ecosystem, including a wide range of Cisco and third-party hardware</li>
+				    <li>Lead, primary contributor for team-specific Gitlab deployment effort, including Gitlab customization, hook and other development work flow enforcement</li>
+				    <li>Wrote Python wrapper for traffic generator hardware (Ixia) legacy Tcl API</li>
 				</ul>
 				<button class="collapsible">more...</button>
 				<div class="job-more">
@@ -232,7 +239,7 @@
 					hardware and configuration combinations and 2) querying the device itself at test-execution-time to understand its
 					state and populate the model. With this information, test authors are able to write very high-level, readable tests
 					describing the desired end-state or the sequence of state changes needed to execute the test in a nice, intuitive,
-					“object oriented” Python syntax reflecting the hierchical structure of the product’s configuration.</p>
+					“object oriented” Python syntax reflecting the hierarchical structure of the product’s configuration.</p>
 
 				    <p>My involvement with Qali and associated projects went from early design and PoC to maintenance and architectural
 					oversight of the entire project years later, after adoption by many hundreds of users spanning several
@@ -245,7 +252,7 @@
 			<div class="job">
 			    <div class="job-header">
 				<div class="employer">
-				    Triad Semiconductor: Winston-Salem, North Carolina
+				    <a href="https://www.triadsemi.com/">Triad Semiconductor</a>: Winston-Salem, North Carolina
 				</div>
 				<div class="date-range">
 				    January 2009-September 2012
@@ -259,7 +266,9 @@
 
 			    <div class="job-body">
 				<ul>
-				    <li>xx</li>
+				    <li>Hired as company's first IT engineer lead effort of ground-up redesign and overhaul of entire network and infrastructure, realized substantial gain in resource use efficiency</li>
+				    <li>Realized large performance gains for ASIC design resources by consolidating and pooling existing resources and creating custom Python utility web portals (Flask)</li>
+				    <li>Deployed internet-facing corporate firewall, VPN endpoint using Linux IPtables, OpenVPN and various intrusion prevention, detection measures (100% open source software)</li>
 				</ul>
 				<button class="collapsible">more...</button>
 				<div class="job-more">
@@ -311,7 +320,10 @@
 
 			    <div class="job-body">
 				<ul>
-				    <li>xxx</li>
+				    <li>Sole responsible party for design, acquisition and administration of organization's entire data, testing and voice networks and all IT infrastructure from company's inception, employing 100% open source software.</li>
+				    <li>Built multiple custom utilities for both corporate and engineering groups: heavily customized Trac deployment, deeply integrated with source change management, development and build infrastructure and corporate communications systems</li>
+				    <li>Multiple complex R & D efforts to explore new hardware possibilities for company's flagship firewall/IDS/IPS product</li>
+				    <li>Fully free, open source enterprise systems: OpenLDAP directory, SSO with from-scratch Python add-change-remove web UI, Postfix/Cyrus IMAP mail system, including automated bulk email categorization</li>
 				</ul>
 				<button class="collapsible">more...</button>
 				<div class="job-more">
@@ -321,7 +333,7 @@
 					requirements with regard to both their corporate network and the test network used for product development.</p>
 
 				    <p>As the sole Systems Administrator, both of these responsibilities laid with me. All routing, intrusion
-					detection/prevention, email catigorization (spam detection), VPN and firewalling systems were implemented using Debian
+					detection/prevention, email categorization (spam detection), VPN and firewalling systems were implemented using Debian
 					Linux running on commodity hardware. The development environment, along with various issue tracking and source version
 					control systems were implemented using a heavily customized instance of Trac. Subversion (and later Git, with a
 					transparent migration and no data loss) were employed for version control. As a start-up with a tight budget, all of
@@ -347,7 +359,7 @@
 
 			    <div class="job-header">
 				<div class="employer">
-				    PointDx: Winston-Salem, North Carolina
+				    <a href="https://web.archive.org/web/20040326020056/http://pointdx.com/">PointDx</a>: Winston-Salem, North Carolina
 				</div>
 				<div class="date-range">
 				    April 2001-April 2007
@@ -361,11 +373,15 @@
 
 			    <div class="job-body">
 				<ul>
-				    <li>xxx</li>
+				    <li>Design, procurement and administration of all corporate IT assets and networks from company's inception; Fully open source email, networking, firewalling, directory (LDAP), Windows desktop admin automation</li>
+				    <li>Curation, anonymization of large radiology imaging data library</li>
+				    <li>Numerous innovative money-saving initiates for small start-up: fully free, open source software; build-out of server room, physical network wiring; use of singular commodity hardware to save the company money (e.g. re-purposed SPARCstations running Debian Linux as stop-gap server hardware; User Mode Linux virtualization to consolidate hardware)</li>
+				    <li></li>
+				    <li></li>
 				</ul>
 				<button class="collapsible">more...</button>
 				<div class="job-more">
-				    <p>At PointDx, A Wake Forest University research spinoff, I quickly learned the value of working with a small, smart,
+				    <p>At PointDx, A Wake Forest University research spin-off, I quickly learned the value of working with a small, smart,
 					humble team and enjoyed a real sense of accomplishment. Staring as employee number five, I owned all of the IT
 					infrastructure, including voice, and data. As a medical startup, data and infrastructure security was a very high
 					priority. This also was my responsibility. This involved among other things, encryption of various types of data,
