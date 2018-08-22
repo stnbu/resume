@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title>Mike Burr</title>
+	<style>
+	 #resume {
+	     font-family: "Times New Roman", Times, serif;
+	     width: 75%;
+	     background-color: ghostwhite;
+	     padding: 30px;
+	     padding-right: 50px;
+	     padding-left: 50px;
+	 }
+
+	 #resume a, a:visited, a:hover, a:active {
+	     color: inherit;
+	 }
+
+	 .job-title {
+	     font-style: italic;
+	 }
+	 .date-range {
+	     font-weight: bold;
+	 }
+	 .employer {
+	     text-decoration: underline;
+	 }
+	 .contact-blurb {
+	     margin: auto;
+	 }
+	 .contact-blurb-cell {
+	     padding-right: 1px;
+	     padding-left: 1px;
+	 }
+	 .paragraph {
+	     text-align: justify;
+	     clear: both;
+	 }
+	 #introduction {
+	     text-align: justify;
+	 }
+	 .page-footer {
+	     margin: auto;
+	 }
+	 #page-header {
+	     border-bottom: 2px solid black;
+	     padding-bottom: 30px;
+	 }
+	 .page {
+	     padding-top: 30px;
+	 }
+	 .job {
+	     margin-bottom: 30px;
+	 }
+
+	 .job-header{width:100%;}
+
+	 .employer {
+	     float:left;
+	     /* width:100px; */
+	 }
+
+	 .date-range{float:right;}
+
+	 .job-tile {
+	     clear: both;
+	     /* position: fixed; */
+	     /* position: absolute; */
+	     /* position: absolute; */
+
+	     float: left;
+	     clear: both;
+	     position:absolute;
+	 }
+
+	 .job-body{
+	     pading-top: 20px;
+	     clear: both;
+	 }
+
+	 .collapsible {
+	     cursor: pointer;
+	     padding: 10px;
+	     width: 100%;
+	     border: none;
+	     text-align: left;
+	     outline: none;
+	 }
+
+	 .active, .collapsible:hover {
+	     background-color: #f1f1f1;
+	 }
+
+	 .job-more {
+	     max-height: 0;
+	     overflow: hidden;
+	     transition: max-height 0.2s ease-out;
+	     background-color: #f1f1f1;
+	 }
+
+
+	</style>
+
+
+
+    </head>
+
+
+    <body>
+	<table id="resume">
+	    <thead>
+		<tr>
+		    <th>
+			<div id="page-header">
+			    <h2>Mike Burr</h2>
+
+			    <table class="contact-blurb">
+				<tr>
+				    <td class="contact-blurb-cell"><a href="mailto:mburr@unintuitive.org">mburr@unintuitive.org</a></td>
+
+				    <td>&#8251;</td>
+
+				    <td class="contact-blurb-cell"><a href="https://unintuitive.org/">https://unintuitive.org/</a></td>
+
+				    <td>&#8251;</td>
+
+				    <td class="contact-blurb-cell"><a href="https://github.com/stnbu">https://github.com/stnbu</a></td>
+
+				</tr>
+			    </table>
+			</div> <!-- #page-header -->
+		    </th>
+		</tr>
+	    </thead>
+
+	    <tfoot>
+		<tr>
+		    <td class="page-footer"><!--Mike Burr - Resume--></td>
+		</tr>
+	    </tfoot>
+
+
+	    <tbody>
+		<tr id="page1" class="page">
+		    <td id="indroduction">
+			<h3>At a Glance...</h3>
+
+			<p class="paragraph">Goal&mdash;I wish to work with a small, motivated team of capable, humble engineers. Workplace culture is a primary
+			    motivator for me. It’s important to me that productivity and goal-seeking be foremost. I thrive under circumstances where I
+			    have ownership. Given a clearly-defined objective, I will produce great results.</p>
+
+			<p class="paragraph">Skills&mdash;<em>Language:</em> Python, Web Frontend (JS, HTML, CSS), Ruby, Shell, PERL
+			    <em>Web Backend:</em> Flask, Django, PostgreSQL, NoSQL, Server Stack (Squid, Nginix, WSGI)
+			    <em>foo</em>Linux/Unix Systems Matters, Development Process, Automation
+			</p>
+
+			<h3>Employment History</h3>
+
+
+
+			<div class="job">
+			    <div class="job-header">
+				<div class="employer">
+				    VMware: Palo Alto, California
+				</div>
+				<div class="date-range">
+				    April 2017-June 2018
+				</div>
+			    </div>
+			    <br /> <!-- ??? -->
+			    <div class="job-title">
+				Staff Engineer
+			    </div>
+
+
+			    <div class="job-body">
+				<ul>
+				    <li>Maintenance, feature implementation, troublehsooting for hybrid cloud platform pure-python testing framework ("gOAT")</li>
+				    <li>Conception, design, implementation of various QA tools: log analysis, mass-host-imaging (with web-UI), gitlab webhooks, git hooks</li>
+				</ul>
+			    </div>
+			    <button class="collapsible">more...</button>
+			    <div class="job-more">
+
+				<p>VMware’s hybrid cloud platform group has a complex, mostly-Python, long-used test framework called “Goat”. My role
+				    at VMware was to maintain and extend this framework, along with participation in development of related quality
+				    infrastructure and tools (e.g. GitLab). Since this product line is available for a wide range of “cloud providers”
+				    (AWS, Rackspace, IBM, and more) as well as custom-built bare metal solutions; accordingly, the range of technologies
+				    involved was broad and rapid ramp-up was often required. A typical day might have included: feature implementation,
+				    bug resolution, assisting test authors in using framework features, build-out of ancillary tools, CI/CD pipeline
+				    features, git hooks, conception and realization of various web portals and custom tools, documentation, meetings and
+				    more.</p>
+
+				<p>Along with this came participation in design meetings, Agile meetings, daily stand-up meetings, technical
+				    assistance of colleagues and various other in-person interactions to coordinate.</p>
+
+				<p>Solutions and technologies used include: Python, most of its standard libraries, along with a wide range of 3rd
+				    party libraries: Django, Flask, Paramiko, Selenium-Python, NumPy and many others; Ruby, including GitLab
+				    customizations and extension of existing Ruby infrastructure; Fast, centralized logging via PostgreSQL, Rsyslog and
+				    Nginx, combined with a custom Python web UI for centralized logging (Flask).</p>
+
+			    </div>
+
+			</div>
+
+
+			<div class="job">
+
+			    <div class="job-header">
+				<div class="employer">
+				    Cisco Systems: San Jose, California
+				</div>
+				<div class="date-range">
+				    November 2012-March 2017
+				</div>
+			    </div>
+			    <br /> <!-- ??? -->
+			    <div class="job-title">
+				Software Developer; QA
+			    </div>
+
+
+			    <div class="job-body">
+				<ul>
+				    <li>xx</li>
+				</ul>
+			    </div>
+			    <button class="collapsible">more...</button>
+
+			    <div class="job-more">
+				<p>Cisco was in need of a robust test framework for their UCS product line. I started in late 2012 on a project that
+				    would become known as “Qali”, a pure-Python testing framework that would ultimately become the standard testing
+				    framework for the entire business unit, and still is to this day. Qali models the state of the UCS in-memory, using a
+				    combination of 1) reading build-related meta information to understand the products’ structure, including possible
+				    hardware and configuration combinations and 2) querying the device itself at test-execution-time to understand its
+				    state and populate the model. With this information, test authors are able to write very high-level, readable tests
+				    describing the desired end-state or the sequence of state changes needed to execute the test in a nice, intuitive,
+				    “object oriented” Python syntax reflecting the hierchical structure of the product’s configuration.</p>
+
+				<p>My involvement with Qali and associated projects went from early design and PoC to maintenance and architectural
+				    oversight of the entire project years later, after adoption by many hundreds of users spanning several
+				    departments.</p>
+
+			    </div>
+			</div>
+
+			<div class="job">
+			    <div class="date-range">
+				January 2009-September 2012
+			    </div>
+
+			    <div class="job-title">
+				IT Manager: Winston-Salem, North Carolina
+			    </div>
+
+			    <div class="employer">
+				Triad Semiconductor
+			    </div>
+
+			    <div class="paragraph">
+				<p>The infrastructure required to effectively operate a 100+ person team of mixed-signal ASIC design and testing staff
+				    is considerable. Outages, performance issues and other problems become very expensive very quickly. The top-to-bottom
+				    administration of this environment was my responsibility at Triad Semiconductor. At the time of my hiring, there were
+				    numerous problems and inefficiencies that a busy team of design engineers don’t have the time or resources to attend
+				    to. I was able to very quickly resolve many of these, leveraging Linux and OSS, a solution not practical without the
+				    required domain knowledge.</p>
+
+				<p>All of this worked out nicely, and much of it is still in place now. As good example, when I was hired, multiple
+				    bare-metal Red Hat Linux servers were in use for circuit simulation (predominately via Mentor Graphics). There was no
+				    reasonable way for engineers to reliably understand current and near-term capacity on these hosts. As a result, it was
+				    common for hosts to slow to a crawl due to over-use. I resolved this by consolidating these hosts into a common
+				    cluster, one of which was used for storage. I exported this same filesystem over a fast, dedicated network, bonding
+				    multiple 10GbE interfaces on each host, deployed Puppet for centralized administration and created a web based (Flask)
+				    UI that allowed engineers to see at a glance what utilization was, know what jobs are queued and more effectively
+				    anticipate utilization. This amounted to much more efficient use of existing resources. It wasn’t perfect, but was
+				    well on its way to being about the best allocation/utilization possible of the available hardware without the need for
+				    expensive, proprietary solutions. This is representative of the many other projects that I was involved with, from
+				    conception to implementation.</p>
+
+				<p>Some of the other especially fruitful solutions implemented by me include: A fully OSS VPN, using OpenVPN with a
+				    custom PKI, allowing for centralized certificate and endpoint management; Replacing costly, proprietary Linux
+				    distribution with free, easily maintained Debian variants (mostly Ubuntu); Replacing an expensive, slow, low capacity
+				    tape backup system with a centralized over-network, differential, high capacity backup system using hot-swappable
+				    commodity eSATA hard disks; Comprehensive site monitoring, including, backup job results, power status, equipment
+				    temperatures and humidity using Nagios, Puppet and some custom glue logic; Consolidation and smarter resource
+				    utilization using host virtualization (Xen ~ v3.0 at the time).</p>
+			    </div>
+			</div>
+
+			<div class="job">
+			    <div class="date-range">
+				April 2007-October 2008
+			    </div>
+
+			    <div class="job-title">
+				Senior Systems Engineer: Winston-Salem, North Carolina
+			    </div>
+
+			    <div class="employer">
+				Greatwall Systems
+			    </div>
+
+			    <div class="paragraph">
+
+				<p>Greatwall Systems was another Wake Forest University spin-off involving many of the same personnel as PointDx. This
+				    time I was employee number four. As an information security start-up, Greatwall Systems had special security
+				    requirements with regard to both their corporate network and the test network used for product development.</p>
+
+				<p>As the sole Systems Administrator, both of these responsibilities laid with me. All routing, intrusion
+				    detection/prevention, email catigorization (spam detection), VPN and firewalling systems were implemented using Debian
+				    Linux running on commodity hardware. The development environment, along with various issue tracking and source version
+				    control systems were implemented using a heavily customized instance of Trac. Subversion (and later Git, with a
+				    transparent migration and no data loss) were employed for version control. As a start-up with a tight budget, all of
+				    this was accomplished using fully open-sourced software, deployed, customized and maintained by myself.</p>
+
+				<p>Again, facing budget constraints and a desire to be as efficient and cost-aware as possible, numerous other
+				    projects and responsibilities fell to me. Some of the more interesting ones include: Installing Linux on and adding
+				    second network interface support for the Sony PlayStation 3 (PS3) for the purposes of developing support for the Cell
+				    architecture; A complete IP-telephony system using commodity hardware running Asterisk and later FreeSwitch, driving
+				    an isolated network of auto-provisioned Polycom desk phones (this project ended up costing the company nothing, as we
+				    were able to fund all related hardware and expenses by selling the obsolete phone system that we replaced); An
+				    elaborate OpenLDAP corporate directory and central authentication system, using a custom Python web UI for
+				    administration. These projects and more were entirely my responsibility, from planning and execution to ongoing
+				    maintenance, uptime and security. I learned a lot and really enjoyed the sense of accomplishment and the wonderful
+				    esprit de corps that comes with such an environment.</p>
+
+			    </div>
+			</div>
+
+			<div class="job">
+			    <div class="date-range">
+				April 2001-April 2007
+			    </div>
+
+
+			    <div class="job-title">
+				Systems Engineer: Winston-Salem, North Carolina
+			    </div>
+
+			    <div class="employer">
+				PointDx (Acquired by GE Healthcare Worldwide)
+			    </div>
+
+			    <div class="paragraph">
+
+				<p>At PointDx, A Wake Forest University research spinoff, I quickly learned the value of working with a small, smart,
+				    humble team and enjoyed a real sense of accomplishment. Staring as employee number five, I owned all of the IT
+				    infrastructure, including voice, and data. As a medical startup, data and infrastructure security was a very high
+				    priority. This also was my responsibility. This involved among other things, encryption of various types of data,
+				    robust IPsec-based Linux VPN endpoint, router and firewall (internet-facing), and sanitizing large quantities of
+				    anonymous radiology (MRI, PET) patient data used in product research and development.</p>
+
+				<p>As a staff-of-one IT department, far into the growth of the organization, automation and centralization was a
+				    critical part of maintaining efficiency and scalability. This included automated deployment, update and maintenance of
+				    Microsoft Windows-based user workstation infrastructure (including use of Samba’s then brand new Windows Domain
+				    support.) With only a very few exceptions, all solutions were fully free, fully open source projects, all tied
+				    together to provide a secure, “enterprise” experience, despite financial constraints. This included a
+				    comprehensive org-wide OpenLDAP deployment, backing various human resources data, providing centralized single
+				    sign-on, and various other resources (including intranet DNS data.)</p>
+
+			    </div>
+			</div>
+
+
+			<h3>Education</h3>
+
+			<p class="education">Bachelor of Science in Mathematics: Gainesville, Florida<br />
+			    University of Florida</p>
+		    </td>
+		</tr>
+	    </tbody>
+	</table>
+
+	<script>
+	 var coll = document.getElementsByClassName("collapsible");
+	 var i;
+	 for (i = 0; i < coll.length; i++) {
+	     coll[i].addEventListener("click", function() {
+		 this.classList.toggle("active");
+		 var content = this.nextElementSibling;
+		 if (content.style.maxHeight){
+		     content.style.maxHeight = null;
+		 } else {
+		     content.style.maxHeight = content.scrollHeight + "px";
+		 }
+	     });
+	 }
+	</script>
+
+    </body>
+</html>
