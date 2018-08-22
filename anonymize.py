@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 styles = {
     'red_dot_under': 'border-bottom: 1px #DB7093 dashed;',
     None: None,
@@ -47,10 +49,14 @@ dictionary = [
     ('Qali', 'SmartTool', 'red_dot_under'),
     ('Goat', 'A-Tool', 'red_dot_under'),
     ('UCS', 'TLA3', 'red_dot_under'),
+    ('VCF', 'TLA4', 'red_dot_under'),
+    ('Unified Computing System', 'Datacenter Solution', 'red_dot_under'),
 ]
 
+_, source_file = sys.argv
+
 # not super efficient. yep.
-with open('resume.html', 'r') as f:
+with open(source_file, 'r') as f:
     for line in f:
         for old, new, style in dictionary:
             if style is not None:
