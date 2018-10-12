@@ -29,6 +29,11 @@ def mkurl(m):
 
 def get_resume():
 
+    context = dict(
+        position='<<%s|%s>>' % (ARGS.job_title, ARGS.job_url),
+        company_name=ARGS.company_name,
+    )
+
     lines = []
     lines.append(ARGS.salutation)
     lines.append('')
@@ -37,8 +42,7 @@ def get_resume():
             line = globals()['X_%s' % name.upper()]
         except NameError:
             raise Exit('Unknown paragraph name: %s' % name)
-        if name.upper() == 'PLEASE_CONSIDER':
-            line = line.format(position='<<%s|%s>>' % (ARGS.job_title, ARGS.job_url))
+        line = line.format(**context)
         lines.append(line)
         lines.append('')
     lines.append(THANKS)
@@ -59,6 +63,7 @@ def get_args(argv):
     parser.add_argument('--format', choices=['text', 'html'], default='html')
     parser.add_argument('--job-title', required=True)
     parser.add_argument('--job-url', required=True)
+    parser.add_argument('--company-name', required=True)
     parser.add_argument('--list', default=False, action='store_true')
     parser.add_argument('paragraphs', nargs='*')
     return parser.parse_args(argv)
@@ -70,11 +75,12 @@ def print_paragraph_choices():
 
 if __name__ == '__main__':
 
-    ARGS = get_args(sys.argv)
-    ARGS.paragraphs = ARGS.paragraphs[1:]
-    if ARGS.list:
+    # yup. gigantic hack.
+    if '--list' in sys.argv:
         print_paragraph_choices()
         sys.exit(0)
+    ARGS = get_args(sys.argv)
+    ARGS.paragraphs = ARGS.paragraphs[1:]
     for name in vars(ARGS):
         print(name, getattr(ARGS, name))
     print(get_resume())
