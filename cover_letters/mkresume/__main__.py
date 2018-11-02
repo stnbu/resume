@@ -11,7 +11,9 @@ SIGNATURE = """Mike Burr
 mburr@unintuitive.org
 https://unintuitive.org/
 """
-THANKS = 'Thank you.'
+THANKS = """I believe that I am a very good candidate for this role! Please get in touch at your earliest convenience.
+
+Thank you."""
 
 URL_MARKDOWN_RE = r'\<\<(?P<text>.*?)\|(?P<url>.*?)\>\>'
 
@@ -59,13 +61,13 @@ def get_resume():
 def get_args(argv):
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('paragraphs', nargs='*')
     parser.add_argument('--salutation', choices=['Hello!', 'Greetings!'], default='Hello!')
     parser.add_argument('--format', choices=['text', 'html'], default='html')
     parser.add_argument('--job-title', required=True)
     parser.add_argument('--job-url', required=True)
     parser.add_argument('--company-name', required=True)
     parser.add_argument('--list', default=False, action='store_true')
-    parser.add_argument('paragraphs', nargs='*')
     return parser.parse_args(argv)
 
 def print_paragraph_choices():
@@ -81,6 +83,4 @@ if __name__ == '__main__':
         sys.exit(0)
     ARGS = get_args(sys.argv)
     ARGS.paragraphs = ARGS.paragraphs[1:]
-    for name in vars(ARGS):
-        print(name, getattr(ARGS, name))
     print(get_resume())
